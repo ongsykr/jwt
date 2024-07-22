@@ -20,3 +20,9 @@ model User {
 
   @@map("user")
 }
+
+model Content {
+  uuid String @id @default(uuid()) @db.Uuid
+  body String 
+  title String
+}
